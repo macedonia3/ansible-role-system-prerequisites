@@ -1,0 +1,8 @@
+---
+
+### This will include also pip3 and python3-setuptools
+- name: System Prerequisites | Python3 | Prequisites installation
+  package:
+    name: python3
+    state: present
+    

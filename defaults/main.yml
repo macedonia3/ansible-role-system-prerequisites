@@ -1,0 +1,19 @@
+---
+
+sys_prereq_update: true
+
+sys_prereq_reboot_enabled: false
+
+# Seconds to wait before reboot. Passed as a parameter to the reboot command.
+# On Linux, macOS and OpenBSD, this is converted to minutes and rounded down. If less than 60, it will be set to 0.
+sys_prereq_reboot_pre_delay: 0
+
+# Seconds to wait after the reboot command was successful before attempting to validate the system rebooted successfully.
+#   This is useful if you want wait for something to settle despite your connection already working.
+sys_prereq_reboot_post_delay: 30
+
+# Maximum seconds to wait for machine to reboot and respond to a test command.
+#   This timeout is evaluated separately for both reboot verification and test command success so the maximum execution time for the module is twice this amount.
+sys_prereq_reboot_timeout: 600
+
+sys_prereq_python3: true

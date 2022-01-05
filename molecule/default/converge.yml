@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include system-prerequisites-role"
+      include_role:
+        name: "ansible-role-system-prerequisites"
